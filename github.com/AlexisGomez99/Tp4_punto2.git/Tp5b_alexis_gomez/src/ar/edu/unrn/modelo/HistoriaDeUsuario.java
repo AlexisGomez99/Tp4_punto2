@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HistoriaDeUsuario implements CalculadorHU{
-	private List<Spike> items= new ArrayList<Spike>();
+	private List<CalculadorHU> items= new ArrayList<CalculadorHU>();
 	private String nombre;
 	public HistoriaDeUsuario(String nombre) {
 		super();
@@ -26,7 +26,7 @@ public class HistoriaDeUsuario implements CalculadorHU{
 		return 0;
 	}
 
-	public void agregarTarea(Spike tarea) {
+	public void agregarTarea(CalculadorHU tarea) {
 		this.items.add(tarea);
 	}
 }
